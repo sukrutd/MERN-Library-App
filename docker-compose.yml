@@ -11,8 +11,6 @@ services:
         volumes: 
             - /app/node_modules
             - ./server:/app
-        # ports: 
-        #     - 5000:5000
         depends_on: 
             - mongodb
         environment: 
@@ -61,8 +59,6 @@ services:
         volumes: 
             - /app/node_modules
             - ./client:/app
-        # ports: 
-        #     - 3000:3000
         depends_on: 
             - library-api
         networks: 
